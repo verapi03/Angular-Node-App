@@ -7,7 +7,9 @@ The project has two folders: frontend and backend. The frontend is written in An
 The backend uses mongoose to connect to MongoDB Atlas to write and read data. It exposes three endpoints for the frontend to consume, namely:
 
 [GET] http://localhost:3000/api/technologies
+
 [GET] http://localhost:3000/api/technology/{id}
+
 [GET] http://localhost:3000/api/technology/search/{name}
 
 To see this project working:
