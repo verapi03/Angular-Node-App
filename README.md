@@ -12,6 +12,8 @@ The backend uses mongoose to connect to MongoDB Atlas to write and read data. It
 
 [GET] http://localhost:3000/api/technology/search/{name}
 
+Because the backend and frontend are entirely decoupled, it would be possible to rewrite the frontend in React or any other technology without affecting the backend at all. In the same way the backend could be replaced entirely for a different technology without affecting the frontend as long as the new API has the same enpoints exposed.
+
 To see this project working:
 
 1) Create a new DB in MongoDB Atlas
@@ -19,6 +21,7 @@ To see this project working:
 3) In the root of the project create a .env file and paste in there the MongoDB Atlas connection string, like this:
 
    PORT=3000
+   
    MONGO_URI="mongodb+srv://<userName>:<password>@cluster0.ggj8f.mongodb.net/<databaseName>?retryWrites=true&w=majority"
    
 5) Install the project's dependencies: "npm install"
